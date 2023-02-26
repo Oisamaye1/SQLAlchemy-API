@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    background-color: white;
+}
+
+.under-nav{
+    background-color: #033C2B;
+}
+.under-nav a{
+    color: white;
+}
+
+.under-nav a:hover{
+    color: rgb(187, 187, 187);
+}
+
+#search .searchbar{
+    background: #F8F7F6;
+    position: relative;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 13px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    color: #090909;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.137);
+}
+
+#search .searchbar:hover input{
+    width: 200px;
+    cursor: pointer;
+    margin-left: 3px;
+    position: initial;
+    color: #000000;
+    transition: 0.5s;
+}
+
+#search .searchbar .fa-solid{
+    color: #033C2B;
+}
+
+#search .searchbar input{
+    background: transparent;
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 0px;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-icon{
+    font-size: 18px;
+    color: #033C2B;
+}
+
+.contain{
+    padding-left: 5%;
+    padding-right:5%;
+
+}
+
+.jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.finishline.com/i/finishline/CU4495_018_M1?$default$&w=671&&h=671&bg=rgb(237,237,237)");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.new-features{
+    display: flex;
+    gap: 10%;
+    text-align: center;
+    color: rgb(138, 138, 138);
+    padding: 0 10px;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.new-features i{
+    font-size: 1.8em;
+}
+
+.sort-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.sort-item .btn{
+    background-color: #EBEDEC;
+    color: #747474;
+    border: none;
+    border-radius: 60px;
+}
+
+.sort-item ul{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #EBEDEC;
+}
+
+.sort-item ul button{
+    background-color: transparent;
+    color: #747474;
+    padding: 5px 0px;
+    width: 100%;
+    border: none;
+}
+
+.sort-item ul button:hover{
+    background-color: #c9c9c9;
+}
+.products-main-box{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+
+.products-main-box h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%
+}
+
+.product-box{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 20px 0px;
+    width: 30%;
+}
+
+.product-box:hover{
+    box-shadow: 10px 10px 20px rgba(156, 156, 156, 0.397);
+    transition: 0.3s;
+}
+
+.product-box .prod-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.prod-info{
+padding: 5px 10px;
+position: relative;
+}
+
+.prod-info h3{
+    font-size: 18px;
+    color: rgb(138, 138, 138);
+}
+
+.prod-info h5{
+    color: #033C2B;
+   
+}
+
+.prod-info .product-box-cart{
+    padding: 5px 15px;
+    color: #033C2B;
+    font-size: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.prod-info .product-box-cart:hover{
+    font-size: 30px;
+}
+
+.button{
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #FF7005;
+    color: white;
+    border: 1px transparent solid;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #FF7005;
+    border: 1px #FF7005 solid;
+}
+
+.hero-card{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.637)), url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/46a45ef0-cad7-4d75-91db-658896079c0e/the-best-nike-platform-sneakers.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.hero-card h5{
+    color: white;
+    font-size: 30px;
+}
+
+.hero-card p{
+    color: white;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #033C2B;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(245, 245, 245);
+}
+
+#newsletter span{
+    color: #FF7005;
+}
+
+#newsletter input{
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#newsletter button{
+    white-space: nowrap;
+    border-radius: 0 4px 4px 0;
+}
+
+.footertop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footertop .footercol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footertop .flogo{
+    margin-bottom: 20px;
+}
+
+.footertop h4{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footertop p{
+    font-size: 13px;
+    margin:0 0 8px 0;
+}
+
+.footertop a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    margin:0 0 8px 0;
+}
+
+.footertop a:hover{
+    color: rgb(114, 114, 114);
+}
+
+.footertop a i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footertop i:hover{
+    color: #FF7005;
+}
+
+.footertop .install a img{
+    margin: -30px 0px -20px -30px;
+}
+
+
+.copyright p{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-bottom: 0;
+    color: #3f3f3f;
+}
+
+/* ------------------Product Page------------------------ */
+
+
+.product-page-banner{
+    color: white;
+}
+
+/* ---------------profile page-------------------- */
+
+.profile-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.prof-info{
+padding: 40px;
+padding-bottom: 50px;
+background-color: rgb(255, 255, 255);
+color: #3f3f3f;
+border-radius: 5px;
+width: 85%;
+}
+
+.details{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.prof-img-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prof-pics{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.details .prof-details{
+    width: 80%;
+}
+
+.details .prof-details input{
+   width: 100%;
+}
+
+.details .prof-details label{
+    width: 400px;
+ }
+
+
+.prof-menu{
+    width: 300px;
+    margin-right: 10px;
+}
+
+.prof-menu ul{
+    list-style: none;
+    
+}
+
+.prof-menu a{
+    text-decoration: none;
+    color: #747474;
+    
+}
+
+.prof-menu li{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px -30px;
+}
+
+.prof-menu li:hover{
+    background-color: rgba(255, 68, 0, 0.082);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.form-box{
+    width: 40vw;
+    background-color: #033C2B;
+    padding: 70px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px 10px #3f3f3f3d;
+}
+
+.form-box .form-control{
+    background-color: transparent;
+    color: white;
+    border-radius: 0px;
+}
+
+.form-box .btn{
+    background-color: #FF7005;
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.form-box .btn:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.login-signup-btn{
+    width: 100%;
+    display: flex;
+}
+
+.login-signup-btn .active{
+ background-color: #FF7005;
+}
+
+.login-signup-btn a{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.form-box .link{
+    color: #FF7005;
+    text-decoration: none;
+}
+
+/* About us section */
+
+.mission-box{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin: 50px 0px;
+}
+.mission-box .mission-text{
+    width: 50%;
+}
+
+.mission-box .mission-text p{
+    color: #3f3f3f;
+}
+
+.about-us h1{
+    font-size: 50px;
+    position: relative;
+    color: #090909;
+}
+
+.about-us h1::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 5px;
+    left: 200px;
+    background: #090909;
+    top: 50%;
+    position: absolute;
+}
+
+.about-us h1::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 5px;
+    right: 200px;
+    background: #090909;
+    top: 50%;
+    position: absolute;
+}
+
+.contact-info{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info i{
+   font-size: 20px;
+   padding: 20px 25px;
+   background-color: #033C2B;
+   color: white;
+}
+
+.contact-form{
+    width: 50%;
+    background-color: #033C2B;
+    padding: 50px;
+}
+
+.contact-form .form-label{
+    color: white;
+}
+
+.contact-form .form-control{
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+}
+
+.contact-form .btn{
+    background-color: #FF7005;
+    border: none;
+    border-radius: 0px;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* brand page starts */
+
+.brand-card{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.637)), url(https://tenniscompanion.org/wp-content/uploads/2020/04/14-best-tennis-shoe-brands-history-and-top-models-for-men-and-women.png.webp);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.brand-card h1{
+    color: #FF7005;
+    font-size: 60px;
+}
+
+.brand-card p{
+    color: #ffffff;
+}
+
+.brand-box{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.brand-box .coll{
+    height: 200px;
+    width: 200px;
+    padding: 40px 20px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: 1px #9c9c9c17 solid;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-box .coll:hover{
+    box-shadow: 10px 10px 20px rgba(156, 156, 156, 0.397);
+
+}
+
+.brand-box .coll img{
+    height: 100%;
+    padding: 5px;
+}

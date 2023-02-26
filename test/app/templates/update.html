@@ -1,0 +1,35 @@
+{% extends "templates.html" %} {% block title %} Jami Legacy - Footware {% endblock %} 
+
+    {% block main %}
+
+    <div class="page-contain container">
+
+
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <form action="{{url_for('update_product', id=product['id'])}}" method="post">
+                    {{ form.name.label(class="form-label") }}
+                    {{ form.name(class="form-control") }}
+                    <br>
+                    {{ form.description.label(class="form-label") }}
+                    {{ form.description(class="form-control") }}
+                    <br>
+                    {{ form.quantity.label(class="form-label") }}
+                    {{ form.quantity(class="form-control") }}
+                    <br>
+                    {{ form.price.label(class="form-label") }}
+                    {{ form.price(class="form-control") }}
+                    <br>
+                    {{ form.submit(class="btn btn-dark") }}
+                    <br>
+                </form>
+                <br>
+            </div>
+        </div>
+        
+        
+        
+        </div>
+
+    {% endblock %}

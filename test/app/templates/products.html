@@ -1,0 +1,13 @@
+{% extends "templates.html" %} {% block title %} Jami Legacy - Footware {% endblock %} 
+
+    {% block main %}
+    
+    {% for product in products %}
+    <a href="{{url_for('get_product', id=product['id'])}}">
+        <h2>{{product["name"]}}</h2>
+    </a>
+    
+    {% endfor %}
+
+
+    {% endblock %}

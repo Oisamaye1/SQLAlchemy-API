@@ -1,0 +1,11 @@
+{% extends "templates.html" %} {% block title %} Jami Legacy - Footware {% endblock %} 
+
+    {% block main %}
+
+    <h1>{{single_product.name}}</h1>
+    <h2>{{single_product.description}}</h2>
+    <a href="{{url_for('update_product', id=single_product.id)}}">UPDATE</a>
+    
+    <a href="{{url_for('delete_product', id=single_product.id)}}">DELETE</a>
+    
+    {% endblock %}
