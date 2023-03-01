@@ -1,11 +1,17 @@
-{% extends "templates.html" %} {% block title %} Jami Legacy - Footware {% endblock %} 
+{% extends "templates.html" %} {% block title %} {{single_product.name}} {% endblock %} 
 
     {% block main %}
+    <br><br>
+    <div class="products container">
 
-    <h1>{{single_product.name}}</h1>
-    <h2>{{single_product.description}}</h2>
-    <a href="{{url_for('update_product', id=single_product.id)}}">UPDATE</a>
+        <h1>{{single_product.name}}</h1>
+        <h5>{{single_product.description}}</h5>
+        <h3>Quantity: {{single_product.quantity}}</h3>
+        <h3>$ {{single_product.price}}</h3>
+        
+        <a class="btn" href="{{url_for('update_product', id=single_product.id)}}">UPDATE</a>
+        
+        <a class="btn" href="{{url_for('delete_product', id=single_product.id)}}">DELETE</a>
     
-    <a href="{{url_for('delete_product', id=single_product.id)}}">DELETE</a>
-    
+    </div>
     {% endblock %}

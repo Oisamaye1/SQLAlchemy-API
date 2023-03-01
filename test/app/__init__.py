@@ -15,4 +15,3 @@ ma = Marshmallow(app)
 
 
 from app import views
-from app import login
