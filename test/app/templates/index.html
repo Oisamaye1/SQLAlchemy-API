@@ -2,11 +2,13 @@
 {% block title %} Product Management {% endblock %} 
 {% block main %}
 <div class="page-contain container">
+    <br><br>
+    <h1>Create Item</h1>
     <div class="add_product_form">
         <div class="row">
             <div class="col">
                 <br><br>
-                <form action="/" method="post">
+                <form action="/" method="post" enctype="multipart/form-data">
                     {{ form.name.label(class="form-label") }}
                     {{ form.name(class="form-control") }}
                     <br>
@@ -18,6 +20,9 @@
                     <br>
                     {{ form.price.label(class="form-label") }}
                     {{ form.price(class="form-control") }}
+                    <br>
+                    {{ form.photo.label(class="form-label") }}
+                    {{ form.photo(class="form-control") }}
                     <br>
                     {{ form.submit(class="btn") }}
                     <br>

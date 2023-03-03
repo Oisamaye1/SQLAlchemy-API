@@ -4,23 +4,26 @@
     {% block main %}
 
     <div class="add_product_form container">
-
-
+        <br><br>
+        <h1>Update</h1>
         <div class="row">
             <div class="col">
                 <br><br>
-                <form action="{{url_for('update_product', id=product['id'])}}" method="post">
+                <form action="{{url_for('update_product', id=product['id'])}}" method="post" enctype="multipart/form-data">
                     {{ form.name.label(class="form-label") }}
-                    {{ form.name(class="form-control") }}
+                    {{ form.name(class="form-control", value=product.name)}}
                     <br>
                     {{ form.description.label(class="form-label") }}
-                    {{ form.description(class="form-control") }}
+                    {{ form.description(class="form-control", value=product.description) }}
                     <br>
                     {{ form.quantity.label(class="form-label") }}
-                    {{ form.quantity(class="form-control") }}
+                    {{ form.quantity(class="form-control", value=product.quantity) }}
                     <br>
                     {{ form.price.label(class="form-label") }}
-                    {{ form.price(class="form-control") }}
+                    {{ form.price(class="form-control", value=product.price)}}
+                    <br>
+                    {{ form.photo.label(class="form-label") }}
+                    {{ form.photo(class="form-control") }}
                     <br>
                     {{ form.submit(class="btn btn-dark") }}
                     <br>
