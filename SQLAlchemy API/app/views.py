@@ -49,6 +49,7 @@ def index():
     new_product = Products(name = form.name.data, description=form.description.data, quantity=form.quantity.data, price=form.price.data, photo=pic.read())
     db.session.add(new_product)
     db.session.commit()
+    flash("Item added successfully")
     return redirect(request.url)
 
   return render_template("index.html", form=form)
@@ -82,14 +83,14 @@ def update_product(id):
     description=form.description.data
     quantity=form.quantity.data
     price=form.price.data
-    photo=form.photo.data
+
 
     product.name = name
     product.description = description
     product.quantity = quantity
     product.price = price
-    product.photo = photo
     db.session.commit()
+    flash("Item updated successfully")
     return redirect(request.url)
 
   return render_template("update.html", product=product, form=form)
@@ -99,5 +100,6 @@ def delete_product(id):
   product = Products.query.get(id)
   db.session.delete(product)
   db.session.commit()
+  flash("Item deleted successfully")
   return redirect(url_for("get_products"))
 

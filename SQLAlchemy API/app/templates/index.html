@@ -1,6 +1,13 @@
 {% extends "templates.html" %} 
 {% block title %} Product Management {% endblock %} 
 {% block main %}
+{% for message in get_flashed_messages() %}
+    <br>
+    <div class="alert container alert-success alert-dismissible fade show" role="alert">
+        {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
 <div class="page-contain container">
     <br><br>
     <h1>Create Item</h1>
